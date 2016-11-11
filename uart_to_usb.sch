@@ -1,0 +1,178 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:pm
+LIBS:l4-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C2
+U 1 1 588471FD
+P 3350 2050
+F 0 "C2" H 3375 2150 50  0000 L CNN
+F 1 "100nF" H 3375 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 3150 2050 50  0000 C CNN
+F 3 "" H 3350 2050 50  0000 C CNN
+	1    3350 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2050 3200 2050
+Wire Wire Line
+	3500 2050 4450 2050
+$Comp
+L VDD #PWR37
+U 1 1 58847294
+P 2250 2000
+F 0 "#PWR37" H 2250 1850 50  0001 C CNN
+F 1 "VDD" H 2250 2150 50  0000 C CNN
+F 2 "" H 2250 2000 50  0000 C CNN
+F 3 "" H 2250 2000 50  0000 C CNN
+	1    2250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR38
+U 1 1 588472AC
+P 4450 2000
+F 0 "#PWR38" H 4450 1750 50  0001 C CNN
+F 1 "GND" H 4450 1850 50  0000 C CNN
+F 2 "" H 4450 2000 50  0000 C CNN
+F 3 "" H 4450 2000 50  0000 C CNN
+	1    4450 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L VDD #PWR39
+U 1 1 588472D5
+P 4450 3250
+F 0 "#PWR39" H 4450 3100 50  0001 C CNN
+F 1 "VDD" H 4450 3400 50  0000 C CNN
+F 2 "" H 4450 3250 50  0000 C CNN
+F 3 "" H 4450 3250 50  0000 C CNN
+	1    4450 3250
+	0    1    1    0   
+$EndComp
+Text HLabel 2100 3650 0    60   Input ~ 0
+UART_TX
+Text HLabel 2100 3450 0    60   Input ~ 0
+UART_RX
+Wire Wire Line
+	2100 3450 2250 3450
+Wire Wire Line
+	4450 2850 4750 2850
+$Comp
+L GND #PWR40
+U 1 1 588475BE
+P 5050 3250
+F 0 "#PWR40" H 5050 3000 50  0001 C CNN
+F 1 "GND" H 5050 3100 50  0000 C CNN
+F 2 "" H 5050 3250 50  0000 C CNN
+F 3 "" H 5050 3250 50  0000 C CNN
+	1    5050 3250
+	0    1    1    0   
+$EndComp
+Text HLabel 2100 3250 0    60   Input ~ 0
+NRST
+Wire Wire Line
+	2100 3250 2250 3250
+$Comp
+L MCP-2221A-ST U3
+U 1 1 588AAE93
+P 3350 3250
+F 0 "U3" H 3350 3150 60  0000 C CNN
+F 1 "MCP2221A-I/ST" H 3400 3350 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 3450 2350 60  0000 C CNN
+F 3 "" H 3350 3250 60  0000 C CNN
+	1    3350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3650 2250 3650
+Wire Wire Line
+	2250 2000 2250 2650
+Connection ~ 2250 2050
+Wire Wire Line
+	4450 2000 4450 2650
+Connection ~ 4450 2050
+Wire Wire Line
+	4450 3050 5050 3050
+Wire Wire Line
+	5050 3150 4750 3150
+Wire Wire Line
+	4750 3150 4750 2850
+Wire Wire Line
+	5050 2950 5050 2450
+$Comp
+L D D5
+U 1 1 58B8C2DF
+P 5200 2450
+F 0 "D5" H 5200 2550 50  0000 C CNN
+F 1 "DB2G42900L1" H 5200 2350 50  0000 C CNN
+F 2 "footprints:0402" H 5350 2250 50  0000 C CNN
+F 3 "" H 5200 2450 50  0000 C CNN
+	1    5200 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR41
+U 1 1 58B8C358
+P 5350 2450
+F 0 "#PWR41" H 5350 2300 50  0001 C CNN
+F 1 "+5V" H 5350 2590 50  0000 C CNN
+F 2 "" H 5350 2450 50  0000 C CNN
+F 3 "" H 5350 2450 50  0000 C CNN
+	1    5350 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A_ P5
+U 1 1 58C243D2
+P 5350 3150
+F 0 "P5" H 5550 2950 50  0000 C CNN
+F 1 "USB_A_" H 5300 3350 50  0000 C CNN
+F 2 "footprints:0482580002" V 5000 3100 50  0000 C CNN
+F 3 "" V 5300 3050 50  0000 C CNN
+	1    5350 3150
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,16 @@
+Board dimensions: 14.5mm x 23mm
+
+Screw hole: 
+	Distance from front edge: 7.85mm
+	Horizontally centered
+	Diamater: 2.2mm
+
+Button:
+	Distance from front edge: 14.325mm
+	Horizontally centered
+	Diamater: 8-10mm
+
+Notches:
+	Distance from the back edge: 3mm
+	Length: 3mm
+	Width: 2.5mm
