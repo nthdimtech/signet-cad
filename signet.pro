@@ -1,4 +1,4 @@
-update=4/16/2019 12:55:57 AM
+update=4/16/2019 1:34:42 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -31,10 +31,10 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/root/Desktop/datasheet/
+PlotDirectoryName=Plots/
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
